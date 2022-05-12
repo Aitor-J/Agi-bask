@@ -13,7 +13,7 @@ const BeachCardList = ({ beach }) => {
   );
 };
 
-BeachCard.propTypes = {
+BeachCardList.propTypes = {
   beach: PropTypes.shape({
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
