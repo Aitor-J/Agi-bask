@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
       <div>
-        <LandingPage />
+        <FindYourOcean />
       </div>
     </div>
   );
