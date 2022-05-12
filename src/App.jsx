@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import FindYourOcean from "./components/FindYourOcean";
 import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
+import Form from "./components/Form";
 import FindYourForest from "./components/FindYourForest";
 
 function App() {
