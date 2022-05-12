@@ -8,7 +8,7 @@ const HomePage = () => {
         </div>
         <div className="home__bg-container__forest">
           <img src="./src/assets/foret.jpeg" alt="foret" />
-          <button className="home__button home__button--green">FOREST</button>
+          <button className="home__button home__button--green">FORET</button>
         </div>
       </div>
     </div>
