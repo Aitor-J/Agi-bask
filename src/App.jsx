@@ -1,14 +1,14 @@
 import "./App.scss";
 import FindYourOcean from "./components/FindYourOcean";
 import LandingPage from "./components/LandingPage";
-import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+
 
 function App() {
   return (
     <div className='app'>
       <div>
-        <LandingPage />
-        <Footer />
+        <HomePage/>
       </div>
     </div>
   );
