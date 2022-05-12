@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import dataBeach from "../data/dataBeach";
-import BeachCard from "./BeachCard";
+import BeachCard from "./BeachCardList";
 
 const FindYourOcean = () => {
   const [location, setLocation] = useState("");
@@ -17,21 +17,39 @@ const FindYourOcean = () => {
       <h1 className="findYourOcean__title">
         Find the perfect way to clean your ocean
       </h1>
-      <select
-        className="findYourOcean__select"
-        onChange={(e) => setLocation(e.target.value)}
-      >
-        {cityNames.map((beach, index) => (
-          <option key={index} value={beach}>
-            {beach}
-          </option>
-        ))}
-      </select>
-      {dataBeach
-        .filter((beach) => beach.location == location)
-        .map((beach) => (
-          <BeachCard beach={beach} />
-        ))}
+      <div className="findYourOcean__selector">
+        <div className="findYourOcean__selector__city">
+          <label>By city:</label>
+          <select
+            className="findYourOcean__selector__city__select"
+            onChange={(e) => setLocation(e.target.value)}
+          >
+            {cityNames.map((beach, index) => (
+              <option key={index} value={beach}>
+                {beach}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="findYourOcean__selector__date">
+          <label>By date:</label>
+          <select
+            className="findYourOcean__selector__date__select"
+            onChange={(e) => setLocation(e.target.value)}
+          >
+            {cityNames.map((beach, index) => (
+              <option key={index} value={beach}>
+                {beach}
+              </option>
+            ))}
+          </select>
+          {dataBeach
+            .filter((beach) => beach.location == location)
+            .map((beach) => (
+              <BeachCard beach={beach} />
+            ))}
+        </div>
+      </div>
     </div>
   );
 };
