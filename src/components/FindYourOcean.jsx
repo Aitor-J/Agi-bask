@@ -10,7 +10,7 @@ const FindYourOcean = () => {
     (beach) =>
       !cityNames.includes(beach.location) && cityNames.push(beach.location)
   );
-
+  console.log(cityNames);
   return (
     <div className="findYourOcean">
       <h1 className="findYourOcean__title">
