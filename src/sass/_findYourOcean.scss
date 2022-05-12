@@ -1,0 +1,15 @@
+.findYourOcean {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    color: blue;
+    padding: 10px 0 10px 0;
+  }
+  &__select {
+    padding: 20px 30px 20px 30px;
+    background-color: blue;
+    border-radius: 10rem;
+  }
+}

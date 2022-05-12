@@ -195,7 +195,7 @@ const databeach = [
     location: "Guéthary",
     link: "",
     desc: "3ème Plage de Guéthary",
-    img: "../public/assets/beach-img/lafitenia.jpg",
+    img: "../public/assets/beach-img/lafintenia.jpg",
   },
   {
     id: 23,
@@ -234,3 +234,5 @@ const databeach = [
     img: "../public/assets/beach-img/hendaye.jpg",
   },
 ];
+
+export default databeach;
