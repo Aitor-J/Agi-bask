@@ -1,6 +1,7 @@
 import "../App.scss";
+import { useState } from "react";
 import Hamburger from "hamburger-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   // state
@@ -10,11 +11,11 @@ const NavBar = () => {
   // debug
 
   return (
-    <div className="burger">
+    <div className="hamburger">
       <Hamburger toggled={isOpen} toggle={setOpen} />
-      <Link to="/">Accueil</Link>
-      <Link to="/Ocean">Océan</Link>
-      <Link to="/Forest">Forêt</Link>
+      <NavLink to="/">Accueil</NavLink>
+      <NavLink to="/Ocean">Océan</NavLink>
+      <NavLink to="/Forest">Forêt</NavLink>
     </div>
   );
 };
