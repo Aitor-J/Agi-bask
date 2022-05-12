@@ -4,12 +4,37 @@
   justify-content: center;
   align-items: center;
   &__title {
-    color: blue;
+    color: rgb(255, 136, 0);
     padding: 10px 0 10px 0;
   }
-  &__select {
-    padding: 20px 30px 20px 30px;
-    background-color: blue;
-    border-radius: 10rem;
+  &__selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__date {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10rem;
+      &__select {
+        padding: 10px 60px 10px 60px;
+        background-color: rgb(141, 141, 230);
+        border-radius: 10rem;
+      }
+    }
+    &__city {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10rem;
+      &__select {
+        padding: 10px 60px 10px 60px;
+        background-color: rgb(141, 141, 230);
+        border-radius: 10rem;
+      }
+    }
   }
 }
