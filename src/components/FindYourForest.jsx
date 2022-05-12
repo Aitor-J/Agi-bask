@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import dataBeach from "../data/dataBeach";
 import BeachCard from "./BeachCardList";
 
-const FindYourOcean = () => {
+const FindYourForest = () => {
   const [location, setLocation] = useState("");
 
   let cityNames = [];
@@ -53,4 +53,4 @@ const FindYourOcean = () => {
   );
 };
 
-export default FindYourOcean;
+export default FindYourForest;
