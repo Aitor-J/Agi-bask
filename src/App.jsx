@@ -1,11 +1,12 @@
 import "./App.scss";
-
-
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
-    <div className="app">
-      <h1> coucou hibou </h1>
+    <div className='app'>
+      <div>
+        <LandingPage />
+      </div>
     </div>
   );
 }
