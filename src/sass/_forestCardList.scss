@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 80vh;
-  background: linear-gradient(to bottom, #407FB9, rgb(29, 72, 212));
+  background: linear-gradient(to bottom, $secondaryGreen, $mainGreen);
   border-radius: 2rem;
   border: 1px solid black;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -37,13 +37,6 @@ backdrop-filter: blur( 3.5px );
     font-weight: 300;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
-    font-family: $fontText;
-    padding: 2vh 0 2vh 0 ;
-  }
-  &__length {
-    font-weight: 300;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
     font-family: $fontText;
     padding: 2vh 0 2vh 0 ;
   }
