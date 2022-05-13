@@ -13,6 +13,8 @@ function App() {
       <HashRouter>
         <NavBar />
         <Routes>
+          {/* <Route path="/" element={<BeachCard beach={databeach[8]} />} /> */}
+
           <Route path="/" element={<LandingPage />} />
           <Route path="/Home" element={<HomePage />} />
           <Route path="/Ocean" element={<FindYourOcean />} />
