@@ -1,0 +1,48 @@
+.forest {
+  background-color: rgb(20, 86, 20);
+  border-radius: 30px 30px 30px 30px;
+  &__title {
+    text-align: center;
+    size: 16px;
+    padding: 5px;
+    color: white;
+  }
+  display: flex;
+  flex-direction: column;
+  &__image {
+    padding-top: 5px;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+  }
+  &__button {
+    border-radius: 20px;
+    margin: 50px 30px;
+    padding: 10px 10px;
+    background-color: white;
+    border: white;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__text {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: tahoma;
+    color: white;
+  }
+
+  &__date {
+    border-radius: 20px;
+    margin: 50px 30px;
+    padding: 10px 60px;
+    text-align: center;
+    opacity: 90%;
+    z-index: 10;
+    background-color: white;
+    border: white;
+    color: green;
+    font-weight: bold;
+  }
+}
