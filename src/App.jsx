@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="app">
       <HashRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Form" element={<Form />} />
