@@ -26,6 +26,10 @@
     text-align: center;
     font-size: 10vw;
     z-index: 10;
+    &__subtitle {
+      color: $mainBlue;
+      font-size: 8vw;
+    }
   }
   &__selector {
     display: flex;
@@ -49,7 +53,7 @@
         width: 100%;
         text-align: center;
         font-family: $fontText;
-        color: white;
+        color: $mainBlue;
         font-size: 6vw;
         z-index: 10;
       }
