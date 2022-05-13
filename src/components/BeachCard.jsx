@@ -1,26 +1,32 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { useParams, NavLink } from "react-router-dom";
+import databeach from "../data/dataBeach";
+import NavBar from "./NavBar";
 
-const BeachCard = ({ beach }) => {
+const BeachCard = () => {
+  const { id } = useParams();
+  const beach = databeach.find((beach) => beach.id == id);
+
   return (
     <div className="beachCard">
+      <NavBar />
       <h1 className="beachCard__title">{beach.name}</h1>
-      <img className="beachCard__image" src={beach.img} alt={beach.name}></img>
-      <h2 className="beachCard__location">{beach.location}</h2>
-      <p className="beachCard__desc">{beach.desc}</p>
-      <p className="beachCard__length">{beach.length}</p>
+      <img className="beachCard__image" src={beach.img} alt={beach.name} />
+      <p className="beachCard__text">{beach.desc}</p>
+      {beach.events.dates[0] == "jj-mm-aaaa" ? (
+        <h2 className="beachCard__noDate">Pas de date disponible...</h2>
+      ) : (
+        beach.events.dates.map((date, index) => (
+          <div className="beachCard__date" key={index}>
+            {date}
+          </div>
+        ))
+      )}
+      <NavLink to="/Form">
+        <div className="beachCard__button">Nouveau Projet</div>
+      </NavLink>
     </div>
   );
-};
-
-BeachCard.propTypes = {
-  beach: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    length: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default BeachCard;
