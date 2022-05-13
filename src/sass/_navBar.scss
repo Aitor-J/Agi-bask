@@ -1,12 +1,32 @@
 .hamburger {
+<<<<<<< HEAD
   font-size: 3.5vh;
   color: $mainGreen;
   width: 90%;
   height: 100%;
+=======
+  position: fixed;
+  left: 0;
+  top: 0%;
+  font-size: 3.5vh;
+  color: $mainGreen;
+  font-size: 40px;
+  z-index: 15;
+
+>>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
   &__button {
-    &__container {
-      width: 100%;
+    border-radius: 20px;
+    background-color: #fcfdf9;
+
+    &__open {
+      padding: 50px 20px 106px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 25px;
+      color: $mainGreen;
       height: 100%;
+<<<<<<< HEAD
       &__open {
         padding: 12px 5px 0 30px;
         display: flex;
@@ -23,11 +43,20 @@
           color: $mainGreen;
           text-decoration: none;
         }
-      }
+=======
+      width: 100%;
+      font-weight: bolder;
 
-      &__close {
-        display: none;
+      &__a {
+        font-family: $fontText;
+        color: rgb(29, 82, 82);
+        text-decoration: none;
+>>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
       }
+    }
+
+    &__close {
+      display: none;
     }
   }
 }

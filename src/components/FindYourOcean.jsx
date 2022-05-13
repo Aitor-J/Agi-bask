@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import Calendar from "react-calendar";
 import dataBeach from "../data/dataBeach";
+=======
+import dataBeach from "../data/databeach";
+>>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
 import BeachCardList from "./BeachCardsList";
 import NavBar from "./NavBar";
 
@@ -19,7 +23,10 @@ const FindYourOcean = () => {
   return (
     <div className="findYourOcean">
       <div className="findYourOcean__bg" />
+<<<<<<< HEAD
       <NavBar />
+=======
+>>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
       <h1 className="findYourOcean__title">
         Find the perfect way to clean your ocean
       </h1>

@@ -10,19 +10,23 @@ const forestCardList = ({ forest }) => {
       <p className='forestCard__desc'>{forest.desc}</p>
       <p className='forestCard__missions'>Prochaines missions</p>
       <ul className='forestCard__lu_dates'>
-        {forest.events.dates[0] === "jj-mm-aaaa" ? (
-          <p className='forestCard__noDates'>Pas de dates disponibles...</p>
-        ) : (
-          forest.events.dates.map((date, index) => (
-            <li className='forestCard__dates' key={index}>
-              {date}
-            </li>
-          ))
-        )}
+        {forest.events.dates[0] === "jj-mm-aaaa"
+          ? ""
+          : forest.events.dates.map((date, index) => (
+              <li className='dates' key={index}>
+                {date}
+              </li>
+            ))}
       </ul>
-      <button className='forestCard__button' type='button'>
-        PARTICIPER
-      </button>
+      {forest.events.dates[0] === "jj-mm-aaaa" ? (
+        <button className='buttonOn' type='button'>
+          CREER
+        </button>
+      ) : (
+        <button className='button' type='button'>
+          PARTICIPER
+        </button>
+      )}
     </div>
   );
 };
