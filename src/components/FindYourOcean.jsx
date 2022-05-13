@@ -12,15 +12,18 @@ const FindYourOcean = () => {
   );
 
   return (
-    <div className="findYourOcean">
-      <div className="findYourOcean__bg" />
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
+    <div className='findYourOcean'>
+      <div className='findYourOcean__bg' />
+      <h1 className='findYourOcean__title'>
+        AGI' BASK
+        <h2 className='findYourOcean__title__subtitle'>
+          Trouve ta communauté pour nettoyer la plage.
+        </h2>
       </h1>
-      <div className="findYourOcean__selector">
-        <div className="findYourOcean__selector__city">
-          <label className="findYourOcean__selector__city__title">
-            Filter par ville
+      <div className='findYourOcean__selector'>
+        <div className='findYourOcean__selector__city'>
+          <label className='findYourOcean__selector__city__title'>
+            ↡ Filtrer par ville ↡
           </label>
 
           {cityNames.map((city, index) => (
@@ -32,8 +35,7 @@ const FindYourOcean = () => {
               }
               key={index}
               value={city}
-              onClick={(e) => setLocations(e.target.value)}
-            >
+              onClick={(e) => setLocations(e.target.value)}>
               {city}
             </button>
           ))}
