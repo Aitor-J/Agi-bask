@@ -2,12 +2,11 @@ import { useState } from "react";
 import Calendar from "react-calendar";
 import moment from "moment";
 
-const CalendarModule = () => {
+const CalendarModule = ({ sessions, setSessions }) => {
   const [selectedDate, setSelectedDate] = useState(
     new Date().toLocaleDateString()
   );
   const [showCalendar, setShowCalendar] = useState(false);
-  const [sessions, setSessions] = useState([]);
 
   return (
     <div className="App">

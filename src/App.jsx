@@ -15,9 +15,11 @@ function App() {
   return (
     <div className="app">
       <HashRouter>
-        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/Form" element={<Form />} />
+          <Route path="/Beach/:id" element={<BeachCard />} />
+          <Route path="/Forest/:id" element={<ForestCard />} />
           <Route path="/Beach" element={<BeachCard beach={databeach[0]} />} />
           <Route path="/Home" element={<HomePage />} />
           <Route path="/Ocean" element={<FindYourOcean />} />
