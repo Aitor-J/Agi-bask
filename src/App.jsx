@@ -9,14 +9,15 @@ import FindYourForest from "./components/FindYourForest";
 
 function App() {
   return (
-    <div className='app'>
+    <div className="app">
       <HashRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/Home' element={<HomePage />} />
-          <Route path='/Ocean' element={<FindYourOcean />} />
-          <Route path='/Forest' element={<FindYourForest />} />
+          {/* <Route path="/" element={<BeachCard beach={databeach[8]} />} /> */}
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/Home" element={<HomePage />} />
+          <Route path="/Ocean" element={<FindYourOcean />} />
+          <Route path="/Forest" element={<FindYourForest />} />
         </Routes>
       </HashRouter>{" "}
     </div>
