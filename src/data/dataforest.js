@@ -12,7 +12,7 @@ const dataforest = [
       ],
     },
     desc: "Forêt de pins, sentiers et promenades à vélo.",
-    img: "../public/assets/forest-img/chiberta.jpg",
+    img: "./assets/forest-img/chiberta.jpg",
   },
   {
     id: 2,
@@ -20,11 +20,7 @@ const dataforest = [
     location: "Anglet",
     events: {
       dates: ["20-05-2022", "28-05-2022", "02-06-2022"],
-      users: [
-        ["Agilberte", "Agnane", "Agrippine"],
-        ["Alaïs", "Albérade"],
-        ["Albertine"],
-      ],
+      users: [["Agilberte", "Agnane", "Agrippine"], ["Alaïs", "Albérade"], ["Albertine"]],
     },
     desc: "Forêt de pins, sentiers et promenades à vélo.",
     img: "../public/assets/forest-img/pignada.jpg",
@@ -95,7 +91,7 @@ const dataforest = [
       users: [],
     },
     desc: "Bois aux sentiers terreux, très humide avec beaucoup de champignons",
-    img: "../public/assets/beach-img/saintpee.jpg",
+    img: "./public/assets/forest-img/saintpee.jpg",
   },
   {
     id: 9,
@@ -106,7 +102,7 @@ const dataforest = [
       users: [],
     },
     desc: "Forêt aux espèces diverses, parfaite pour des balades en vélo",
-    img: "../public/assets/beach-img/lapin.jpg",
+    img: "../public/assets/forest-img/lapin.jpg",
   },
   {
     id: 10,
@@ -117,7 +113,7 @@ const dataforest = [
       users: [],
     },
     desc: "Plaine avec vue dégagé, pour de superbes panorama",
-    img: "../public/assets/beach-img/ansot.jpg",
+    img: "../public/assets/forest-img/ansot.jpg",
   },
 ];
 
