@@ -8,6 +8,8 @@ import Form from "./components/Form";
 import FindYourForest from "./components/FindYourForest";
 import BeachCard from "./components/BeachCard";
 import databeach from "./data/databeach";
+import ForestCard from "./components/ForestCard";
+import dataforest from "./data/dataforest";
 
 function App() {
   return (

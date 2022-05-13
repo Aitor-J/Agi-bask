@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import dataBeach from "../data/dataBeach";
-import BeachCardList from "./BeachCardList";
+import dataBeach from "../data/databeach";
+import BeachCardList from "./BeachCardsList";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
