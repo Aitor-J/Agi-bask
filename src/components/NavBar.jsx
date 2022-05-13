@@ -13,38 +13,38 @@ const NavBar = () => {
 
   return (
     <div className="hamburger">
-      <Hamburger toggled={isOpen} toggle={setOpen} />
-      <div className="hambuger__container">
+      <Hamburger className="hamburger" toggled={isOpen} toggle={setOpen} />
+      <div className="hamburger__button">
         <div
           className={
             isOpen
-              ? "hamburger__container__open"
-              : "hamburger__container__close"
+              ? "hamburger__button__container__open"
+              : "hamburger__button__container__close"
           }
         >
-          <Link className="hamburger__container__open__a" to="/">
+          <Link className="hamburger__button__container__open__a" to="/">
             Accueil
           </Link>
         </div>
         <div
           className={
             isOpen
-              ? "hamburger__container__open"
-              : "hamburger__container__close"
+              ? "hamburger__button__container__open"
+              : "hamburger__button__container__close"
           }
         >
-          <Link className="hamburger__container__open__a" to="/Ocean">
+          <Link className="hamburger__button__container__open__a" to="/Ocean">
             Océan
           </Link>
         </div>
         <div
           className={
             isOpen
-              ? "hamburger__container__open"
-              : "hamburger__container__close"
+              ? "hamburger__button__container__open"
+              : "hamburger__button__container__close"
           }
         >
-          <Link className="hamburger__container__open__a" to="/Forest">
+          <Link className="hamburger__button__container__open__a" to="/Forest">
             Forêt
           </Link>
         </div>
