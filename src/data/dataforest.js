@@ -20,7 +20,11 @@ const dataforest = [
     location: "Anglet",
     events: {
       dates: ["20-05-2022", "28-05-2022", "02-06-2022"],
-      users: [["Agilberte", "Agnane", "Agrippine"], ["Alaïs", "Albérade"], ["Albertine"]],
+      users: [
+        ["Agilberte", "Agnane", "Agrippine"],
+        ["Alaïs", "Albérade"],
+        ["Albertine"],
+      ],
     },
     desc: "Forêt de pins, sentiers et promenades à vélo.",
     img: "./assets/forest-img/pignada.jpg",
