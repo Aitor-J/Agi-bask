@@ -1,0 +1,23 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  font-size: 3rem;
+  font-weight: 400;
+
+  backdrop-filter: blur(3px);
+  background-color: $mainGreen;
+  &__nav {
+    width: 10px;
+    height: 10px;
+    color: white;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 4rem 0 4rem 0;
+    color: white;
+  }
+}
