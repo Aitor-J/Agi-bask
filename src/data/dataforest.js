@@ -111,6 +111,10 @@ const dataforest = [
     id: 9,
     name: "La Forêt des Lapins",
     location: "Itxassou",
+    link: "",
+    desc: "Forêt aux espèces diverses, parfaite pour des balades en vélo",
+    img: "../public/assets/beach-img/lapin.jpg",
+    missions: "Balade dans un parc à la découverte des lapins",
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
@@ -122,6 +126,11 @@ const dataforest = [
     id: 10,
     name: "Plaine d’Ansot",
     location: "Bayonne",
+    link: "",
+    desc: "Plaine avec vue dégagé, pour de superbes panorama",
+    img: "../public/assets/beach-img/ansot.jpg",
+    mission:
+      "Ramassage des déchets et sensibilisation au réchauffement climatique",
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
