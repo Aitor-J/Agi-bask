@@ -1,45 +1,39 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
-import dataBeach from "../data/dataBeach";
-import BeachCard from "./BeachCard";
+import dataBeach from "../data/databeach";
+import BeachCardList from "./BeachCardsList";
 
 const FindYourOcean = () => {
-  const [location, setLocation] = useState("");
+  const [locations, setLocations] = useState([]);
 
   let cityNames = [];
-  dataBeach.map(
-    (beach) =>
-      !cityNames.includes(beach.location) && cityNames.push(beach.location)
-  );
+  dataBeach.map((beach) => !cityNames.includes(beach.location) && cityNames.push(beach.location));
 
   return (
-    <div className="findYourOcean">
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
-      </h1>
-      <select
-        className="findYourOcean__select"
-        onChange={(e) => setLocation(e.target.value)}
-      >
-        {cityNames.map((beach, index) => (
-          <option key={index} value={beach}>
-            {beach}
-          </option>
-        ))}
-      </select>
-      {dataBeach
-        .filter((beach) => beach.location == location)
-        .map((beach) => (
-          <BeachCard beach={beach} />
-        ))}
+    <div className='findYourOcean'>
+      <div className='findYourOcean__bg' />
+      <h1 className='findYourOcean__title'>Find the perfect way to clean your ocean</h1>
+      <div className='findYourOcean__selector'>
+        <div className='findYourOcean__selector__city'>
+          <label className='findYourOcean__selector__city__title'>Filter par ville</label>
+
+          {cityNames.map((city, index) => (
+            <button
+              className={city === locations ? "findYourOcean__selector__city__buttonOn" : "findYourOcean__selector__city__button"}
+              key={index}
+              value={city}
+              onClick={(e) => setLocations(e.target.value)}>
+              {city}
+            </button>
+          ))}
+        </div>
+      </div>
+      {locations.length !== 0
+        ? dataBeach
+            .filter((beach) => beach.location == locations)
+            .map((beach, index) => <BeachCardList beach={beach} key={index} />)
+        : dataBeach.map((beach, index) => <BeachCardList beach={beach} key={index} />)}
     </div>
   );
-};
-
-FindYourOcean.propTypes = {
-  beaches: PropTypes.shape({
-    location: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default FindYourOcean;

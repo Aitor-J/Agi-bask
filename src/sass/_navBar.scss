@@ -1,0 +1,36 @@
+.hamburger {
+  position: fixed;
+  left: 0;
+  top: 0%;
+  font-size: 3.5vh;
+  color: $mainGreen;
+  font-size: 40px;
+  z-index: 15;
+
+  &__button {
+    border-radius: 20px;
+    background-color: #fcfdf9;
+
+    &__open {
+      padding: 50px 20px 106px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 25px;
+      color: $mainGreen;
+      height: 100%;
+      width: 100%;
+      font-weight: bolder;
+
+      &__a {
+        font-family: $fontText;
+        color: rgb(29, 82, 82);
+        text-decoration: none;
+      }
+    }
+
+    &__close {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.land {
+  height: 100%;
+  width: 100vw;
+
+  &__border {
+    &__button {
+      font-size: 8vw;
+      position: absolute;
+      display: flex;
+      background: white;
+      top: 80%;
+      left: 5vw;
+      padding: 1rem;
+      width: 90%;
+      border: $secondaryGreen;
+      border-radius: 40px;
+
+      color: $mainGreen;
+    }
+  }
+}
+.landing {
+  display: flex;
+  border-top-left-radius: 7vw;
+  border-bottom-left-radius: 7vw;
+  text-align: center;
+  margin-left: 30vw;
+  width: 70%;
+  height: 100vh;
+  padding-top: 5vw;
+  flex-direction: column;
+  background-color: $mainGreen;
+
+  &__title {
+    color: white;
+    font-family: $fontMainTitle;
+    font-size: 20vw;
+    text-shadow: 4px 4px 8px black;
+  }
+  &__subtitle {
+    padding: 10vw;
+    color: white;
+    font-family: $fontText;
+    font-size: 4vh;
+    text-shadow: 4px 4px 8px black;
+  }
+}

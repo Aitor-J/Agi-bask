@@ -1,26 +1,32 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const BeachCard = ({ beach }) => {
+const BeachCard = (beach) => {
+  console.log(beach);
   return (
     <div className="beachCard">
-      <h1 className="beachCard__title">{beach.name}</h1>
-      <img className="beachCard__image" src={beach.img} alt={beach.name}></img>
-      <h2 className="beachCard__location">{beach.location}</h2>
-      <p className="beachCard__desc">{beach.desc}</p>
-      <p className="beachCard__length">{beach.length}</p>
+      <h1 className="beachCard__title">{beach.beach.name}</h1>
+      <img
+        className="beachCard__image"
+        src={beach.beach.img}
+        alt={beach.beach.name}
+      />
+      <p className="beachCard__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, suscipit
+        impedit ab dolorem cumque labore modi obcaecati quam odio et vero
+        aliquid! Neque exercitationem consequuntur ab atque molestiae modi nisi.
+      </p>
+      {beach.beach.events.dates[0] === "jj-mm-aaaa" ? (
+        <h2 className="beachCard__noDate">Pas de date disponible...</h2>
+      ) : (
+        beach.beach.events.dates.map((date, index) => (
+          <div className="beachCard__date" key={index}>
+            {date}
+          </div>
+        ))
+      )}
+      <div className="beachCard__button">Nouveau Projet</div>
     </div>
   );
-};
-
-BeachCard.propTypes = {
-  beach: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
-    length: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default BeachCard;
