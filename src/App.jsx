@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="app">
       <HashRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Beach" element={<BeachCard beach={databeach[0]} />} />

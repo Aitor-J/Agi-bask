@@ -1,23 +1,26 @@
 .hamburger {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0%;
   font-size: 3.5vh;
   color: $mainGreen;
   width: 100%;
   height: 100%;
+  z-index: 50;
+  font-size: 40px;
+
   &__button {
     &__container {
       width: 100%;
       height: 100%;
       &__open {
-        padding: 12px 5px 0 30px;
+        padding: 100px 10px 50px 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding-left: 25px;
         color: $mainGreen;
-        backdrop-filter: blur(3px);
+        background-color: #fff;
         height: 100%;
         width: 100%;
 
