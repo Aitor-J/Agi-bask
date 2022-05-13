@@ -1,4 +1,4 @@
-const databeach = [
+const dataforest = [
   {
     id: 1,
     name: "Forêt de Chiberta",
@@ -116,3 +116,5 @@ const databeach = [
     img: "../public/assets/beach-img/ansot.jpg",
   },
 ];
+
+export default dataforest;
