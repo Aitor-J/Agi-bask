@@ -6,34 +6,22 @@ const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
 
   let cityNames = [];
-  dataBeach.map(
-    (beach) =>
-      !cityNames.includes(beach.location) && cityNames.push(beach.location)
-  );
-  console.log(cityNames);
+  dataBeach.map((beach) => !cityNames.includes(beach.location) && cityNames.push(beach.location));
+
   return (
-    <div className="findYourOcean">
+    <div className='findYourOcean'>
       {/* <img src='./src/assets/ocean.jpg' alt='ocean' /> */}
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
-      </h1>
-      <div className="findYourOcean__selector">
-        <div className="findYourOcean__selector__city">
-          <label className="findYourOcean__selector__city__title">
-            Filter par ville
-          </label>
+      <h1 className='findYourOcean__title'>Find the perfect way to clean your ocean</h1>
+      <div className='findYourOcean__selector'>
+        <div className='findYourOcean__selector__city'>
+          <label className='findYourOcean__selector__city__title'>Filter par ville</label>
 
           {cityNames.map((city, index) => (
             <button
-              className={
-                city === locations
-                  ? "findYourOcean__selector__city__buttonOn"
-                  : "findYourOcean__selector__city__button"
-              }
+              className={city === locations ? "findYourOcean__selector__city__buttonOn" : "findYourOcean__selector__city__button"}
               key={index}
               value={city}
-              onClick={(e) => setLocations(e.target.value)}
-            >
+              onClick={(e) => setLocations(e.target.value)}>
               {city}
             </button>
           ))}
