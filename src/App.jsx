@@ -9,21 +9,22 @@ import FindYourForest from "./components/FindYourForest";
 import BeachCard from "./components/BeachCard";
 import databeach from "./data/databeach";
 import ForestCard from "./components/ForestCard";
-import dataforest from "./data/dataforest";
+import FormJoin from "./components/FormJoin";
 
 function App() {
   return (
-    <div className="app">
+    <div className='app'>
       <HashRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/Form" element={<Form />} />
-          <Route path="/Beach/:id" element={<BeachCard />} />
-          <Route path="/Forest/:id" element={<ForestCard />} />
-          <Route path="/Beach" element={<BeachCard beach={databeach[0]} />} />
-          <Route path="/Home" element={<HomePage />} />
-          <Route path="/Ocean" element={<FindYourOcean />} />
-          <Route path="/Forest" element={<FindYourForest />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/Form' element={<Form />} />
+          <Route path='/FormJoin' element={<FormJoin />} />
+          <Route path='/Beach/:id' element={<BeachCard />} />
+          <Route path='/Forest/:id' element={<ForestCard />} />
+          <Route path='/Beach' element={<BeachCard beach={databeach[0]} />} />
+          <Route path='/Home' element={<HomePage />} />
+          <Route path='/Ocean' element={<FindYourOcean />} />
+          <Route path='/Forest' element={<FindYourForest />} />
         </Routes>
       </HashRouter>{" "}
     </div>
