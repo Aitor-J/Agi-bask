@@ -7,11 +7,7 @@ const CalendarModule = () => {
     new Date().toLocaleDateString()
   );
   const [showCalendar, setShowCalendar] = useState(false);
-  const [sessions, setSessions] = useState([
-    "24-12-2021",
-    "02-02-2022",
-    "05-02-2022",
-  ]);
+  const [sessions, setSessions] = useState([]);
 
   return (
     <div className="App">
