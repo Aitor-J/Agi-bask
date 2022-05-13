@@ -10,11 +10,15 @@ const FindYourOcean = () => {
 
   return (
     <div className='findYourOcean'>
-      {/* <img src='./src/assets/ocean.jpg' alt='ocean' /> */}
-      <h1 className='findYourOcean__title'>Find the perfect way to clean your ocean</h1>
+      <div className='findYourOcean__bg' />
+      <h1 className='findYourOcean__title'>
+        Find the perfect way to clean your ocean
+      </h1>
       <div className='findYourOcean__selector'>
         <div className='findYourOcean__selector__city'>
-          <label className='findYourOcean__selector__city__title'>Filter par ville</label>
+          <label className='findYourOcean__selector__city__title'>
+            Filter par ville
+          </label>
 
           {cityNames.map((city, index) => (
             <button
