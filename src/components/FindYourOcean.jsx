@@ -6,11 +6,8 @@ const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
 
   let cityNames = [];
-  dataBeach.map(
-    (beach) =>
-      !cityNames.includes(beach.location) && cityNames.push(beach.location)
-  );
-  console.log(cityNames);
+  dataBeach.map((beach) => !cityNames.includes(beach.location) && cityNames.push(beach.location));
+
   return (
     <div className='findYourOcean'>
       <div className='findYourOcean__bg' />
@@ -25,11 +22,7 @@ const FindYourOcean = () => {
 
           {cityNames.map((city, index) => (
             <button
-              className={
-                city === locations
-                  ? "findYourOcean__selector__city__buttonOn"
-                  : "findYourOcean__selector__city__button"
-              }
+              className={city === locations ? "findYourOcean__selector__city__buttonOn" : "findYourOcean__selector__city__button"}
               key={index}
               value={city}
               onClick={(e) => setLocations(e.target.value)}>
@@ -38,11 +31,11 @@ const FindYourOcean = () => {
           ))}
         </div>
       </div>
-      {dataBeach
-        .filter((beach) => beach.location == locations)
-        .map((beach, index) => (
-          <BeachCardList beach={beach} key={index} />
-        ))}
+      {locations.length !== 0
+        ? dataBeach
+            .filter((beach) => beach.location == locations)
+            .map((beach, index) => <BeachCardList beach={beach} key={index} />)
+        : dataBeach.map((beach, index) => <BeachCardList beach={beach} key={index} />)}
     </div>
   );
 };
