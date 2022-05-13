@@ -1,4 +1,4 @@
-const databeach = [
+const dataforest = [
   {
     id: 1,
     name: "Forêt de Chiberta",
@@ -20,7 +20,11 @@ const databeach = [
     location: "Anglet",
     events: {
       dates: ["20-05-2022", "28-05-2022", "02-06-2022"],
-      users: [["Agilberte", "Agnane", "Agrippine"], ["Alaïs", "Albérade"], ["Albertine"]],
+      users: [
+        ["Agilberte", "Agnane", "Agrippine"],
+        ["Alaïs", "Albérade"],
+        ["Albertine"],
+      ],
     },
     desc: "Forêt de pins, sentiers et promenades à vélo.",
     img: "../public/assets/forest-img/pignada.jpg",
@@ -116,3 +120,5 @@ const databeach = [
     img: "../public/assets/beach-img/ansot.jpg",
   },
 ];
+
+export default dataforest;

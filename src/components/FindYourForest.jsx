@@ -1,52 +1,37 @@
 import React, { useState } from "react";
-import dataBeach from "../data/dataBeach";
+import dataForest from "../data/dataforest";
 import BeachCard from "./BeachCardList";
 
 const FindYourForest = () => {
   const [location, setLocation] = useState("");
 
   let cityNames = [];
-  dataBeach.map(
-    (beach) =>
-      !cityNames.includes(beach.location) && cityNames.push(beach.location)
+  dataForest.map(
+    (forest) =>
+      !cityNames.includes(forest.location) && cityNames.push(forest.location)
   );
 
   return (
-    <div className="findYourOcean">
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
-      </h1>
-      <div className="findYourOcean__selector">
-        <div className="findYourOcean__selector__city">
-          <label>By city:</label>
-          <select
-            className="findYourOcean__selector__city__select"
-            onChange={(e) => setLocation(e.target.value)}
-          >
-            {cityNames.map((beach, index) => (
-              <option key={index} value={beach}>
-                {beach}
-              </option>
+    <div className='findYourForest'>
+      <div className='findYourForest__bg'>
+        <h1 className='findYourForest__bg__title'>
+          Find the perfect way to clean your Forest
+        </h1>
+        <div className='findYourForest__bg__selector'>
+          <div className='findYourForest__bg__selector__city'>
+            <label className='findYourForest__bg__selector__city__title'>
+              Filter par ville
+            </label>
+
+            {cityNames.map((city, index) => (
+              <div
+                className='findYourForest__bg__selector__city__button'
+                key={index}
+                value={city}>
+                {city}
+              </div>
             ))}
-          </select>
-        </div>
-        <div className="findYourOcean__selector__date">
-          <label>By date:</label>
-          <select
-            className="findYourOcean__selector__date__select"
-            onChange={(e) => setLocation(e.target.value)}
-          >
-            {cityNames.map((beach, index) => (
-              <option key={index} value={beach}>
-                {beach}
-              </option>
-            ))}
-          </select>
-          {dataBeach
-            .filter((beach) => beach.location == location)
-            .map((beach) => (
-              <BeachCard beach={beach} />
-            ))}
+          </div>
         </div>
       </div>
     </div>
