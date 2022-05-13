@@ -23,7 +23,7 @@ const dataforest = [
       users: [["Agilberte", "Agnane", "Agrippine"], ["Alaïs", "Albérade"], ["Albertine"]],
     },
     desc: "Forêt de pins, sentiers et promenades à vélo.",
-    img: "../public/assets/forest-img/pignada.jpg",
+    img: "./assets/forest-img/pignada.jpg",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const dataforest = [
       users: [],
     },
     desc: "Vrai havre de paix, sentiers et promenades à vélo.",
-    img: "../public/assets/forest-img/lazaret.jpg",
+    img: "./assets/forest-img/lazaret.jpg",
   },
 
   {
@@ -46,7 +46,7 @@ const dataforest = [
       users: [["Anthony"]],
     },
     desc: "Forêt au coeur du pays Basque, pour balades et randonnées",
-    img: "../public/assets/forest-img/hasparren.jpg",
+    img: "./assets/forest-img/hasparren.jpg",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const dataforest = [
       users: [["Anthony"], ["Fred"]],
     },
     desc: "Terrain varié, panorama très large sur les Pyrénées, quelques belles demeures.",
-    img: "../public/assets/forest-img/ustaritz.jpg",
+    img: "./assets/forest-img/ustaritz.jpg",
   },
 
   {
@@ -69,7 +69,7 @@ const dataforest = [
       users: [],
     },
     desc: "Forêt aux essences végétales variées, parfaite pour balade en famille.",
-    img: "../public/assets/forest-img/urt.jpg",
+    img: "./assets/forest-img/urt.jpg",
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ const dataforest = [
       users: [["Jérome"], ["Afred", "Hubert"], ["Stéphane", "Jimmy"]],
     },
     desc: "Bois très dense aux chemins sinueux",
-    img: "../public/assets/forest-img/fagosse.jpg",
+    img: "./assets/forest-img/fagosse.jpg",
   },
   {
     id: 8,
@@ -91,7 +91,7 @@ const dataforest = [
       users: [],
     },
     desc: "Bois aux sentiers terreux, très humide avec beaucoup de champignons",
-    img: "./public/assets/forest-img/saintpee.jpg",
+    img: "/assets/forest-img/saintpee.jpg",
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ const dataforest = [
       users: [],
     },
     desc: "Forêt aux espèces diverses, parfaite pour des balades en vélo",
-    img: "../public/assets/forest-img/lapin.jpg",
+    img: "./assets/forest-img/lapin.jpg",
   },
   {
     id: 10,
@@ -113,7 +113,7 @@ const dataforest = [
       users: [],
     },
     desc: "Plaine avec vue dégagé, pour de superbes panorama",
-    img: "../public/assets/forest-img/ansot.jpg",
+    img: "./assets/forest-img/ansot.jpg",
   },
 ];
 
