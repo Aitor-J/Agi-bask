@@ -1,10 +1,7 @@
 .hamburger {
-  position: absolute;
-  left: 0;
-  top: 0%;
   font-size: 3.5vh;
   color: $mainGreen;
-  width: 100%;
+  width: 90%;
   height: 100%;
   &__button {
     &__container {
@@ -20,7 +17,6 @@
         backdrop-filter: blur(3px);
         height: 100%;
         width: 100%;
-
         &__a {
           text-shadow: 2px 2px 4px black;
           font-family: $fontText;
@@ -28,7 +24,6 @@
           text-decoration: none;
         }
       }
-
       &__close {
         display: none;
       }
