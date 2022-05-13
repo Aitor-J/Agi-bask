@@ -5,7 +5,7 @@ const databeach = [
     length: "500m",
     location: "Anglet",
     events: {
-      dates: ["15-05-2022", "25-05-2022"],
+      dates: [["15-05-2022"], ["25-05-2022"]],
       users: [
         ["Joséphine", "Pierre"],
         ["Antoine", "Roger"],
@@ -32,7 +32,7 @@ const databeach = [
   },
   {
     id: 3,
-    name: "Plage des Dunes",
+    name: "Les Dunes",
     length: "410m",
     location: "Anglet",
     events: {
@@ -44,7 +44,7 @@ const databeach = [
   },
   {
     id: 4,
-    name: "Plage de l'Océan",
+    name: "L'océan",
     length: "410m",
     location: "Anglet",
     events: {
@@ -107,7 +107,7 @@ const databeach = [
   },
   {
     id: 9,
-    name: "Chambre d'amour",
+    name: "La chambre d'amour",
     length: "220m",
     location: "Anglet",
     events: {
@@ -131,7 +131,7 @@ const databeach = [
   },
   {
     id: 11,
-    name: "Miramar",
+    name: "Le Miramar",
     length: "380m",
     location: "Biarritz",
     events: {
@@ -191,7 +191,7 @@ const databeach = [
   },
   {
     id: 16,
-    name: "Plage d'Ilbaritz",
+    name: "Ilbaritz",
     length: "1OO0m",
     location: "Biarritz",
     events: {
@@ -215,7 +215,7 @@ const databeach = [
   },
   {
     id: 18,
-    name: "L'Uhabia",
+    name: "L'uhabia",
     length: "790m",
     location: "Bidart",
     events: {
@@ -251,7 +251,7 @@ const databeach = [
   },
   {
     id: 21,
-    name: "Plage de Mayarco",
+    name: "Mayarco",
     length: "420m",
     location: "Guéthary",
     events: {
@@ -263,7 +263,7 @@ const databeach = [
   },
   {
     id: 22,
-    name: "Plage de Lafitenia",
+    name: "Lafitenia",
     length: "720m",
     location: "Guéthary",
     events: {
@@ -275,7 +275,7 @@ const databeach = [
   },
   {
     id: 23,
-    name: "Plage d'Erromardie",
+    name: "Erromardie",
     length: "1000m",
     location: "Saint-Jean-de-Luz",
     events: {
@@ -287,8 +287,8 @@ const databeach = [
   },
   {
     id: 24,
-    name: "Grande plage de Saint-Jean-de-Luz",
-    length: "1000m",
+    name: "Grande plage",
+    length: "1 km",
     location: "Saint-Jean-de-Luz",
     events: {
       dates: ["jj-mm-aaaa"],
@@ -312,7 +312,7 @@ const databeach = [
   {
     id: 26,
     name: "Plage d'Hendaye",
-    length: "2500m",
+    length: "2,5 km",
     location: "Hendaye",
     events: {
       dates: ["jj-mm-aaaa"],
