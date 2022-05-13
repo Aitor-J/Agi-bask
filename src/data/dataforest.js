@@ -21,7 +21,11 @@ const dataforest = [
     location: "Anglet",
     events: {
       dates: ["20-05-2022", "28-05-2022", "02-06-2022"],
-      users: [["Agilberte", "Agnane", "Agrippine"], ["Alaïs", "Albérade"], ["Albertine"]],
+      users: [
+        ["Agilberte", "Agnane", "Agrippine"],
+        ["Alaïs", "Albérade"],
+        ["Albertine"],
+      ],
     },
     desc: "Anglet est le point de rencontre de l’océan et de la forêt. Situé à deux pas des plages, cet espace boisé de 250 hectares couvre près de 10% de la superficie de la commune et comprend les forêts du Pignada et du Lazaret. Il offre un espace aménagé, ombragé et frais, propice aux promenades et à la pratique de nombreuses activités sportives. ",
     img: "../public/assets/forest-img/pignada.jpg",

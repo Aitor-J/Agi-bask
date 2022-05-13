@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vh;
+width: 90vw;
   background: linear-gradient(to bottom, $secondaryGreen, $mainGreen);
   border-radius: 2rem;
   border: 1px solid black;
@@ -13,6 +13,7 @@
   color: #000000;
   margin: 10px;
   margin-top: 100px;
+
   &__title {
     font-size: 3rem;
     font-weight: 300;
@@ -66,38 +67,56 @@
     display: flex;
     flex-direction: column;
   }
-  &__dates {
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    font-family: $fontText;
-    padding: 1vh 0 2vh 0;
-    display: flex;
-    flex-direction: column;
-  }
-  &__noDates {
-    font-weight: 800;
-    font-size: 2rem;
-    color: rgb(197, 50, 50);
-    text-shadow: 1px 1px 1px black;
-    font-family: $fontText;
-    padding: 1vh 0 2vh 0;
-    display: flex;
-    flex-direction: column;
-  }
-  &__button {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: rgb(0, 0, 0);
-    font-family: $fontText;
-    padding: 2vh 0 2vh 0;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    border: 1px solid black;
-    padding: 2vh;
-    margin-bottom: 4vh;
-    box-shadow: 0 8px 8px 0 #000000;
-  }
+
+ 
+  
+}
+
+.dates {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: $fontText;
+  padding: 1vh 0 2vh 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.noDates {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  color: rgb(197, 50, 50);
+  text-shadow: 1px 1px 1px black;
+  font-family: $fontText;
+  padding: 1vh 0 2vh 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: $fontText;
+  padding: 2vh 0 2vh 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 2vh;
+  margin-bottom: 4vh;
+  box-shadow: 0 8px 8px 0 #000000;
+}
+.buttonOn {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: $fontText;
+  padding: 2vh 0 2vh 0;
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin-bottom: 4vh;
+  box-shadow: 0 8px 8px 0 #000000;
+  width: 45vw;
 }
