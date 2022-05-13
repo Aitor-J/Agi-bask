@@ -11,7 +11,7 @@ const databeach = [
         ["Antoine", "Roger"],
       ],
     },
-    desc: "1ère Plage d'Anglet ",
+    desc: "Plage prisée par les touristes, dût aux activités que l'on y retrouve, comme le skate, la patinoire, et notre très aimé McDonalds.",
     img: "../public/assets/beach-img/labarre.jpg",
   },
   {
@@ -27,7 +27,7 @@ const databeach = [
         ["Salomon", "David"],
       ],
     },
-    desc: "2ème Plage d'Anglet ",
+    desc: "Plage familiale aux grandes étendues d'herbe, de quoi s'occuper en matière de ramssage de déchets, surtout le mercredi soir...",
     img: "../public/assets/beach-img/cavalier.jpg",
   },
   {
@@ -39,7 +39,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "3ème Plage d'Anglet ",
+    desc: "Plage à tolérance nudiste, peu fréquenté mais personnes adultes et respectueuses du site en majorité, présence d'un bar en bord de mer avec jus détox au menu",
     img: "../public/assets/beach-img/dune.jpg",
   },
   {
@@ -54,7 +54,7 @@ const databeach = [
         ["Eliot", "Jeff"],
       ],
     },
-    desc: "5ème Plage d'Anglet ",
+    desc: "Voisine des dunes, plage plus sauvage que les autres et peu fréquentée par la jeunesse, on y trouve des plagistes plutôt respectueux de l'environnement dans l'ensemble.",
     img: "../public/assets/beach-img/ocean.jpg",
   },
   {
@@ -66,7 +66,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "6ème Plage d'Anglet ",
+    desc: "Plage à caractère plus jeune, bien que prisée par les surfeurs, son emplacement idéal en fait un plage très fréquenté.",
     img: "../public/assets/beach-img/madrague.jpg",
   },
   {
@@ -78,7 +78,7 @@ const databeach = [
       dates: ["07-06-2022"],
       users: [["Dave", "Nat"]],
     },
-    desc: "7ème Plage d'Anglet ",
+    desc: "Plage familiale où il fait bon se prélasser, se dorer la pilule, très prise.",
     img: "../public/assets/beach-img/corsaire.jpg",
   },
   {
@@ -90,7 +90,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "8ème Plage d'Anglet ",
+    desc: "A l'instar de ses voisines, plage très prisée par les familles, avec une très forte concentration l'été.",
     img: "../public/assets/beach-img/marinela.jpg",
   },
   {
@@ -102,7 +102,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "9ème Plage d'Anglet ",
+    desc: "Face à la balade des sables d'or, plage fréquentée par une foule du matin au soir, avec bars restaurants et filets de volley-ball",
     img: "../public/assets/beach-img/sabledor.jpg",
   },
   {
@@ -114,7 +114,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "11ème Plage d'Anglet ",
+    desc: "Comme son nom l'indique, la plage de la chambre d'amour possède une grotte réputée pour son histoire, où il ne fait pas bon aller quand la marée monte.",
     img: "../public/assets/beach-img/chambredamour.jpg",
   },
   {
@@ -126,7 +126,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "12ème Plage d'Anglet ",
+    desc: "Plage en bord de falaise, avec une vue imprenable sur le phare de Biarritz, et son indétrônable Village Vacancier de type Paquebot.",
     img: "../public/assets/beach-img/vff.jpg",
   },
   {
@@ -138,7 +138,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Biarritz ",
+    desc: "Plage en bord de falaise, avec une vue imprenable sur le phare de Biarritz, et son indétrônable Hotel de luxe du Miramar.",
     img: "../public/assets/beach-img/miramar.jpg",
   },
   {
@@ -150,7 +150,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "2ème Plage de Biarritz ",
+    desc: "Connu à travers le monde, la grande plage de Biarritz réunies des milliers de touristes chaques années, avec son casino Barriere et sa vue époustouflante.",
     img: "../public/assets/beach-img/grandeplageb.jpg",
   },
   {
@@ -162,7 +162,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "3ème Plage de Biarritz ",
+    desc: "Incroyable plage pour apprendre à surfer, elle disparait lors des marées hautes mais offrent des vagues de qualité pour les apprentis.",
     img: "../public/assets/beach-img/cotedesbasques.jpg",
   },
   {
@@ -174,7 +174,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "4ème Plage de Biarritz ",
+    desc: "Petite plage VIP pour les locaux biarrots, remplie de surfer d'une autre époque.",
     img: "../public/assets/beach-img/marbella.jpg",
   },
   {
@@ -186,7 +186,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "5ème Plage de Biarritz ",
+    desc: "Grande plage très fréquentée par les Biarrots. Promenade aménagée en bord de mer . Aire de jeux pour les enfants. Activité Handiplage avec tiralos et Handisurf avec accès direct à la mer. A marée montante, le shore break peut être assez brutal.",
     img: "../public/assets/beach-img/milady.jpg",
   },
   {
@@ -198,7 +198,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "6ème Plage de Biarritz ",
+    desc: "Sur un peu plus de 300m de sable, vous pourrez pleinement profiter de cette plage de la Côte Basque qui est surveillée pendant la saison estivale, de mi juin à fin octobre. Les sportifs pourront également s’adonner au golf sur un très beau parcours qui entoure & surplombe la plage.",
     img: "../public/assets/beach-img/ilbaritz.jpg",
   },
   {
@@ -210,7 +210,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Bidart ",
+    desc: "La plage d'Erretegia se situe à proximité de Bidart Centre mais à l’écart du centre-ville dans un cadre verdoyant et naturel qui s’étend sur plusieurs centaines de mètres.",
     img: "../public/assets/beach-img/erretegia.jpg",
   },
   {
@@ -222,7 +222,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "2ème Plage de Bidart ",
+    desc: "C’est une large plage de sable, la plus grande de la commune, mais également la plus accessible. Elle est labellisée Handiplage",
     img: "../public/assets/beach-img/luhabia.jpg",
   },
   {
@@ -234,7 +234,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "3ème Plage de Bidart ",
+    desc: "Plage privée Vias Plage. C'est une expérience à part que de découvrir le Bahia Beach Vias Plage Concentrés d'Indonésie et de contemporain nous transportent dans ce lieu zen et moderne, dépaysement garantie !",
     img: "../public/assets/beach-img/bahia.jpg",
   },
   {
@@ -246,7 +246,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Guéthary",
+    desc: "La plage de Parlementia est la plage le plus au sud de Bidart, à la limite avec le village de Guéthary. Cette plage de sable est assez rocheuse et très prisée pour le surf. Le cadre est naturel et intimiste avec d’un côté les maisons basques de Bidart et de l’autre le petit village et le port de Guéthary.",
     img: "../public/assets/beach-img/parlementia.jpg",
   },
   {
@@ -258,7 +258,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "2ème Plage de Guéthary",
+    desc: "Cette plage de sable est toute proche des campings du quartier d’Acotz. Mini-golf au bord de la plage.",
     img: "../public/assets/beach-img/mayarco.jpg",
   },
   {
@@ -270,7 +270,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "3ème Plage de Guéthary",
+    desc: "Cette plage est le coin préféré des surfeurs confirmés qui affronteront la vague gauche de rochers située un peu au large.",
     img: "../public/assets/beach-img/lafintenia.jpg",
   },
   {
@@ -282,7 +282,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Saint-Jean-de-Luz",
+    desc: "C'est une plage tranquille où il est indispensable de venir avec son seau et son épuisette à marée basse pour chercher les crabes dans les rochers apparents.",
     img: "../public/assets/beach-img/erromardie.jpg",
   },
   {
@@ -294,7 +294,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "2ème Plage de Saint-Jean-de-Luz",
+    desc: "Au bord d’une des plus belles baies du monde, à deux minutes à pied de la Place Louis XIV et du port, la Grande Plage est la plage incontournable de Saint-Jean-de-Luz. Sable fin, plan d’eau calme protégé par trois digues, la plage idéale pour toute la famille et notamment avec des enfants en bas âge. S’y retrouvent plusieurs générations de luziens.",
     img: "../public/assets/beach-img/grandeplagestjean.jpg",
   },
   {
@@ -306,7 +306,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Ciboure",
+    desc: "L'océan y est beaucoup plus calme que chez ses voisines de la Côte Basque grâce aux 3 digues construites au XIXème siècle et qui protègent la baie des assauts de la mer.",
     img: "../public/assets/beach-img/ciboure.jpg",
   },
   {
@@ -318,7 +318,7 @@ const databeach = [
       dates: ["jj-mm-aaaa"],
       users: [],
     },
-    desc: "1ère Plage de Hendaye",
+    desc: `Considérée comme "piste verte" pour apprendre le surf, elle est aussi labellisée "Handiplage", facilitant la baignade des personnes à mobilité réduite. Elle figure depuis 2015 dans le TOP 10 des meilleures plages françaises, sur le site d'avis Tripadvisor !`,
     img: "../public/assets/beach-img/hendaye.jpg",
   },
 ];

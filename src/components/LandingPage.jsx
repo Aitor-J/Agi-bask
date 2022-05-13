@@ -1,4 +1,5 @@
 import "../App.scss";
+import { NavLink } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -10,7 +11,9 @@ const LandingPage = () => {
         </p>
       </div>
       <div className='land__border'>
-        <button className='land__border__button'>Get Started ↠</button>
+        <NavLink to='/Home'>
+          <button className='land__border__button'>Get Started ↠</button>
+        </NavLink>
       </div>
     </div>
   );
