@@ -28,7 +28,6 @@ const Form = () => {
           type="text"
           placeholder="Descriptif de l'évènement"
         />
-
         <input
           className="form__container__input__lieu__number__text__bouton"
           type="submit"

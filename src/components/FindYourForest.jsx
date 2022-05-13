@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dataForest from "../data/dataforest";
 import BeachCard from "./BeachCardList";
+import ForestCardList from "./ForestCardList";
 
 const FindYourForest = () => {
   const [location, setLocation] = useState("");

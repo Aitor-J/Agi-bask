@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import dataBeach from "../data/dataBeach";
-import BeachCard from "./BeachCardList";
+import BeachCardList from "./BeachCardList";
 
 const FindYourOcean = () => {
-  const [location, setLocation] = useState("");
+  const [locations, setLocations] = useState([]);
 
   let cityNames = [];
   dataBeach.map(
     (beach) =>
       !cityNames.includes(beach.location) && cityNames.push(beach.location)
   );
-
+  console.log(cityNames);
   return (
     <div className='findYourOcean'>
       <div className='findYourOcean__bg' />
@@ -24,12 +24,25 @@ const FindYourOcean = () => {
           </label>
 
           {cityNames.map((city, index) => (
-            <div className='findYourOcean__selector__city__button' key={index}>
-              <p>{city}</p>
-            </div>
+            <button
+              className={
+                city === locations
+                  ? "findYourOcean__selector__city__buttonOn"
+                  : "findYourOcean__selector__city__button"
+              }
+              key={index}
+              value={city}
+              onClick={(e) => setLocations(e.target.value)}>
+              {city}
+            </button>
           ))}
         </div>
       </div>
+      {dataBeach
+        .filter((beach) => beach.location == locations)
+        .map((beach, index) => (
+          <BeachCardList beach={beach} key={index} />
+        ))}
     </div>
   );
 };
