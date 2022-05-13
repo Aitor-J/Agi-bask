@@ -13,6 +13,8 @@ const dataforest = [
     },
     desc: "Ses voies vertes sillonnent la forêt d'est en ouest et du nord au sud. Elles offrent d'infinies possibilités de circuits improvisés pour votre plus grand bonheur. Le parcours santé du Pignada propose un parcours sportif de 2 583 m.",
     img: "../public/assets/forest-img/chiberta.jpg",
+    missions:
+      "Ramassage des déchets et des préventions qu'on les feux de forêts",
   },
   {
     id: 2,
@@ -28,6 +30,8 @@ const dataforest = [
     },
     desc: "Anglet est le point de rencontre de l’océan et de la forêt. Situé à deux pas des plages, cet espace boisé de 250 hectares couvre près de 10% de la superficie de la commune et comprend les forêts du Pignada et du Lazaret. Il offre un espace aménagé, ombragé et frais, propice aux promenades et à la pratique de nombreuses activités sportives. ",
     img: "../public/assets/forest-img/pignada.jpg",
+    missions:
+      "Promenage en forêt avec guide pour vous présenter les différentes plantes",
   },
   {
     id: 3,
@@ -39,6 +43,8 @@ const dataforest = [
     },
     desc: "Situé à deux pas des plages, cet espace boisé de 250 hectares couvre près de 10% de la superficie de la commune et comprend les forêt du Pignada et du Lazaret.",
     img: "../public/assets/forest-img/lazaret.jpg",
+    missions:
+      "Sensibilisation à l'impact humain sur l'environnement au travers de différents jeux",
   },
 
   {
@@ -62,6 +68,8 @@ const dataforest = [
     },
     desc: "Au sud ouest de la commune et sur une superficie de 650 hectares, la forêt d'Ustaritz est l'endroit idéal pour se mettre au vert. Une belle promenade agrémentée de tables de pique-nique.",
     img: "../public/assets/forest-img/ustaritz.jpg",
+    missions:
+      "Balade en forêt avec jeux pour sensibiliser sur les biens-faits du sport",
   },
 
   {
@@ -85,6 +93,8 @@ const dataforest = [
     },
     desc: "Bois très dense aux chemins sinueux au tour du golf de Chantaco",
     img: "../public/assets/forest-img/fagosse.jpg",
+    missions:
+      "Balade en forêt avec jeux pour sensibiliser sur les biens-faits du sport",
   },
   {
     id: 8,
@@ -101,23 +111,36 @@ const dataforest = [
     id: 9,
     name: "La Forêt des Lapins",
     location: "Itxassou",
+
+    link: "",
+    desc: "Forêt aux espèces diverses, parfaite pour des balades en vélo",
+    img: "../public/assets/beach-img/lapin.jpg",
+    missions: "Balade dans un parc à la découverte des lapins",
+
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
     },
     desc: "Venez les découvrir au cours de visites pédestres guidées ou pas et observez en même temps la faune, la flore, les rapaces, et connaître l'histoire fabuleuse du lapin d'il y a 400 000 ans à nos jours...",
-    img: "../public/assets/beach-img/lapin.jpg",
+    img: "../public/assets/forest-img/lapin.jpg",
   },
   {
     id: 10,
     name: "Plaine d’Ansot",
     location: "Bayonne",
+
+    link: "",
+    desc: "Plaine avec vue dégagé, pour de superbes panorama",
+    img: "../public/assets/beach-img/ansot.jpg",
+    mission:
+      "Ramassage des déchets et sensibilisation au réchauffement climatique",
+
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
     },
     desc: "Située aux portes de Bayonne et le long de la Nive, la Plaine d’Ansot est un espace naturel sensible de 100 hectares offrant un ilot de verdure en zone périurbaine. Intégré au réseau Natura 2000, ce site réglementé est une zone de barthes, constituée d'une mosaïque de milieux naturels (bois, prairies, roselières, cours d'eau…) abritant une flore et une faune particulières.",
-    img: "../public/assets/beach-img/ansot.jpg",
+    img: "../public/assets/forest-img/ansot.jpg",
   },
 ];
 

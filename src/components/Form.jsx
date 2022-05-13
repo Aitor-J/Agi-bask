@@ -1,6 +1,9 @@
+import NavBar from "./NavBar";
+
 const Form = () => {
   return (
     <div className="form">
+      <NavBar />
       <form className="form__container">
         <label>
           <input

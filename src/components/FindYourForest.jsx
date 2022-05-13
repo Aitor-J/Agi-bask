@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dataForest from "../data/dataforest";
 import ForestCardList from "./ForestCardList";
+import NavBar from "./NavBar";
 
 const FindYourForest = () => {
   const [locations, setLocations] = useState([]);
@@ -12,15 +13,17 @@ const FindYourForest = () => {
   );
 
   return (
-    <div className='findYourForest'>
-      <div className='findYourForest__bg' />
-      <h1 className='findYourForest__title'>
-        Find the perfect way to clean your Forest
-      </h1>
-      <div className='findYourForest__selector'>
-        <div className='findYourForest__selector__city'>
-          <label className='findYourForest__selector__city__title'>
-            Filter par ville
+    <div className="findYourForest">
+      <div className="findYourForest__bg" />
+      <NavBar />
+      <h1 className="findYourForest__title">AGI' BASK</h1>
+      <h2 className="findYourForest__subtitle">
+        Trouve ta communauté pour nettoyer la forêt.
+      </h2>
+      <div className="findYourForest__selector">
+        <div className="findYourForest__selector__city">
+          <label className="findYourForest__selector__city__title">
+            ↡ Filtrer par ville ↡
           </label>
 
           {cityNames.map((city, index) => (
@@ -32,7 +35,8 @@ const FindYourForest = () => {
               }
               key={index}
               value={city}
-              onClick={(e) => setLocations(e.target.value)}>
+              onClick={(e) => setLocations(e.target.value)}
+            >
               {city}
             </button>
           ))}

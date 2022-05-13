@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import dataBeach from "../data/databeach";
+import Calendar from "react-calendar";
+import dataBeach from "../data/dataBeach";
 import BeachCardList from "./BeachCardsList";
+import NavBar from "./NavBar";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
@@ -14,13 +16,16 @@ const FindYourOcean = () => {
   return (
     <div className="findYourOcean">
       <div className="findYourOcean__bg" />
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
-      </h1>
+      <NavBar />
+      <h1 className="findYourOcean__title">AGI' BASK</h1>
+      <h2 className="findYourOcean__subtitle">
+        Trouve ta communauté pour nettoyer la plage.
+      </h2>
+
       <div className="findYourOcean__selector">
         <div className="findYourOcean__selector__city">
           <label className="findYourOcean__selector__city__title">
-            Filter par ville
+            ↡ Filtrer par ville ↡
           </label>
 
           {cityNames.map((city, index) => (
