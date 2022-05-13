@@ -41,6 +41,9 @@
     color: rgb(0, 0, 0);
     font-family: $fontText;
     padding: 2vh 0 1vh 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
   }
   &__length {
     font-weight: 300;
