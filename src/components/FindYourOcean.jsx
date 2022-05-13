@@ -12,41 +12,22 @@ const FindYourOcean = () => {
   );
 
   return (
-    <div className="findYourOcean">
-      <h1 className="findYourOcean__title">
+    <div className='findYourOcean'>
+      {/* <img src='./src/assets/ocean.jpg' alt='ocean' /> */}
+      <h1 className='findYourOcean__title'>
         Find the perfect way to clean your ocean
       </h1>
-      <div className="findYourOcean__selector">
-        <div className="findYourOcean__selector__city">
-          <label>By city:</label>
-          <select
-            className="findYourOcean__selector__city__select"
-            onChange={(e) => setLocation(e.target.value)}
-          >
-            {cityNames.map((beach, index) => (
-              <option key={index} value={beach}>
-                {beach}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="findYourOcean__selector__date">
-          <label>By date:</label>
-          <select
-            className="findYourOcean__selector__date__select"
-            onChange={(e) => setLocation(e.target.value)}
-          >
-            {cityNames.map((beach, index) => (
-              <option key={index} value={beach}>
-                {beach}
-              </option>
-            ))}
-          </select>
-          {dataBeach
-            .filter((beach) => beach.location == location)
-            .map((beach) => (
-              <BeachCard beach={beach} />
-            ))}
+      <div className='findYourOcean__selector'>
+        <div className='findYourOcean__selector__city'>
+          <label className='findYourOcean__selector__city__title'>
+            Filter par ville
+          </label>
+
+          {cityNames.map((city, index) => (
+            <div className='findYourOcean__selector__city__button' key={index}>
+              <p>{city}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
