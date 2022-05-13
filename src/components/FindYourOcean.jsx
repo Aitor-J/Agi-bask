@@ -17,13 +17,15 @@ const FindYourOcean = () => {
     <div className="findYourOcean">
       <div className="findYourOcean__bg" />
       <NavBar />
-      <h1 className="findYourOcean__title">
-        Find the perfect way to clean your ocean
-      </h1>
+      <h1 className="findYourOcean__title">AGI' BASK</h1>
+      <h2 className="findYourOcean__subtitle">
+        Trouve ta communauté pour nettoyer la plage.
+      </h2>
+
       <div className="findYourOcean__selector">
         <div className="findYourOcean__selector__city">
           <label className="findYourOcean__selector__city__title">
-            Filter par ville
+            ↡ Filtrer par ville ↡
           </label>
 
           {cityNames.map((city, index) => (

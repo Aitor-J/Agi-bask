@@ -29,6 +29,7 @@
     font-size: 16px;
     margin-left: 10px;
     margin-top: 10px;
+    text-align: center;
     font-family: tahoma;
     color: white;
   }
@@ -44,5 +45,10 @@
     border: white;
     color: white;
     font-weight: bold;
+  }
+  &__noDate {
+    text-align: center;
+    color: rgb(124, 10, 10);
+    padding: 10px;
   }
 }

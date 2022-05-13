@@ -16,13 +16,14 @@ const FindYourForest = () => {
     <div className="findYourForest">
       <div className="findYourForest__bg" />
       <NavBar />
-      <h1 className="findYourForest__title">
-        Find the perfect way to clean your Forest
-      </h1>
+      <h1 className="findYourForest__title">AGI' BASK</h1>
+      <h2 className="findYourForest__subtitle">
+        Trouve ta communauté pour nettoyer la forêt.
+      </h2>
       <div className="findYourForest__selector">
         <div className="findYourForest__selector__city">
           <label className="findYourForest__selector__city__title">
-            Filter par ville
+            ↡ Filtrer par ville ↡
           </label>
 
           {cityNames.map((city, index) => (

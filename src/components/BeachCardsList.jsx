@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const BeachCardsList = ({ beach }) => {
   return (
@@ -11,7 +12,7 @@ const BeachCardsList = ({ beach }) => {
       <p className="beachCards__length">
         <span className="beachCards__span">Distance: </span> {beach.length}
       </p>
-      <p className="beachCards__missions">Prochaines missions</p>
+      <p className="beachCards__missions">Prochaines missions:</p>
       <ul className="beachCards__lu_dates">
         {beach.events.dates[0] === "jj-mm-aaaa"
           ? ""
@@ -22,13 +23,17 @@ const BeachCardsList = ({ beach }) => {
             ))}
       </ul>
       {beach.events.dates[0] === "jj-mm-aaaa" ? (
-        <button className="beachCards__buttonOn" type="button">
-          CREER
-        </button>
+        <NavLink to={`/Beach/${beach.id}`}>
+          <button className="beachCards__buttonOn" type="button">
+            CREER
+          </button>
+        </NavLink>
       ) : (
-        <button className="beachCards__button" type="button">
-          PARTICIPER
-        </button>
+        <NavLink to={`/Beach/${beach.id}`}>
+          <button className="beachCards__button" type="button">
+            PARTICIPER
+          </button>
+        </NavLink>
       )}
     </div>
   );

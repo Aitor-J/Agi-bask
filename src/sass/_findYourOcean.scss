@@ -19,12 +19,19 @@
     z-index: 0;
   }
   &__title {
-    padding: 3rem 0 10px 0;
+    padding: 0 0 10px 0;
     font-family: $fontMainTitle;
     color: $mainBlue;
     text-align: center;
-    font-size: 10vw;
+    font-size: 15vw;
     z-index: 10;
+  }
+  &__subtitle {
+    color: $mainBlue;
+    font-family: $fontMainTitle;
+    color: $mainBlue;
+    text-align: center;
+    font-size: 8vw;
   }
   &__selector {
     display: flex;
@@ -48,8 +55,8 @@
         width: 100%;
         text-align: center;
         font-family: $fontText;
-        color: white;
-        font-size: 6vw;
+        color: $mainBlue;
+        font-size: 8vw;
         z-index: 10;
       }
       &__button {
