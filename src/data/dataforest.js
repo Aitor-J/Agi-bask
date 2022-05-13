@@ -57,6 +57,8 @@ const dataforest = [
     },
     desc: "Forêt au coeur du pays Basque, pour balades et randonnées",
     img: "./assets/forest-img/hasparren.jpg",
+    missions:
+      "Balade en forêt avec jeux pour sensibiliser sur les biens-faits du sport",
   },
   {
     id: 5,
@@ -82,6 +84,7 @@ const dataforest = [
     },
     desc: "Forêt aux essences végétales variées, parfaite pour balade en famille.",
     img: "./assets/forest-img/urt.jpg",
+    missions: "Ramassage et revalorisation des déchets ",
   },
   {
     id: 7,
@@ -106,41 +109,33 @@ const dataforest = [
     },
     desc: "Bois aux sentiers terreux, très humide avec beaucoup de champignons",
     img: "/assets/forest-img/saintpee.jpg",
+    missions:
+      "Balade en forêt avec jeux pour sensibiliser sur les biens-faits du sport",
   },
   {
     id: 9,
     name: "La Forêt des Lapins",
     location: "Itxassou",
-
-    link: "",
-    desc: "Forêt aux espèces diverses, parfaite pour des balades en vélo",
-    img: "../public/assets/beach-img/lapin.jpg",
-    missions: "Balade dans un parc à la découverte des lapins",
-
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
     },
     desc: "Venez les découvrir au cours de visites pédestres guidées ou pas et observez en même temps la faune, la flore, les rapaces, et connaître l'histoire fabuleuse du lapin d'il y a 400 000 ans à nos jours...",
     img: "../public/assets/forest-img/lapin.jpg",
+    missions: "Balade dans un parc à la découverte des lapins",
   },
   {
     id: 10,
     name: "Plaine d’Ansot",
     location: "Bayonne",
-
-    link: "",
-    desc: "Plaine avec vue dégagé, pour de superbes panorama",
-    img: "../public/assets/beach-img/ansot.jpg",
-    mission:
-      "Ramassage des déchets et sensibilisation au réchauffement climatique",
-
     events: {
       dates: ["jj-mm-aaaa"],
       users: [],
     },
     desc: "Située aux portes de Bayonne et le long de la Nive, la Plaine d’Ansot est un espace naturel sensible de 100 hectares offrant un ilot de verdure en zone périurbaine. Intégré au réseau Natura 2000, ce site réglementé est une zone de barthes, constituée d'une mosaïque de milieux naturels (bois, prairies, roselières, cours d'eau…) abritant une flore et une faune particulières.",
     img: "../public/assets/forest-img/ansot.jpg",
+    mission:
+      "Ramassage des déchets et sensibilisation au réchauffement climatique",
   },
 ];
 
