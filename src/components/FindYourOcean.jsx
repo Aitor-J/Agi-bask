@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import dataBeach from "../data/dataBeach";
+import dataBeach from "../data/databeach";
 import BeachCardList from "./BeachCardsList";
 
 const FindYourOcean = () => {
