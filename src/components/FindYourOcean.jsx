@@ -27,11 +27,11 @@ const FindYourOcean = () => {
           ))}
         </div>
       </div>
-      {dataBeach
-        .filter((beach) => beach.location == locations)
-        .map((beach, index) => (
-          <BeachCardList beach={beach} key={index} />
-        ))}
+      {locations.length !== 0
+        ? dataBeach
+            .filter((beach) => beach.location == locations)
+            .map((beach, index) => <BeachCardList beach={beach} key={index} />)
+        : dataBeach.map((beach, index) => <BeachCardList beach={beach} key={index} />)}
     </div>
   );
 };
