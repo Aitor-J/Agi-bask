@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import dataBeach from "../data/dataBeach";
-import BeachCardList from "./BeachCardList";
-import NavBar from "./NavBar";
+import BeachCardList from "./BeachCardsList";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
@@ -15,7 +14,6 @@ const FindYourOcean = () => {
   return (
     <div className="findYourOcean">
       <div className="findYourOcean__bg" />
-      <NavBar />
       <h1 className="findYourOcean__title">
         Find the perfect way to clean your ocean
       </h1>

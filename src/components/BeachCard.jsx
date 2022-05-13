@@ -10,7 +10,7 @@ const BeachCard = (beach) => {
         src={beach.beach.img}
         alt={beach.beach.name}
       />
-      <p>
+      <p className="beachCard__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, suscipit
         impedit ab dolorem cumque labore modi obcaecati quam odio et vero
         aliquid! Neque exercitationem consequuntur ab atque molestiae modi nisi.
@@ -24,7 +24,7 @@ const BeachCard = (beach) => {
           </div>
         ))
       )}
-      <div className="beachCard__button">NEW PROJECT</div>
+      <div className="beachCard__button">Nouveau Projet</div>
     </div>
   );
 };
