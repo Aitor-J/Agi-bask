@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import dataForest from "../data/dataforest";
 import ForestCardList from "./ForestCardList";
+import NavBar from "./NavBar";
 
 const FindYourForest = () => {
   const [locations, setLocations] = useState([]);
@@ -14,6 +15,7 @@ const FindYourForest = () => {
   return (
     <div className="findYourForest">
       <div className="findYourForest__bg">
+        <NavBar />
         <h1 className="findYourForest__bg__title">
           Find the perfect way to clean your Forest
         </h1>
