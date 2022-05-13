@@ -11,6 +11,9 @@
     "prepare": "husky install",
     "deploy": "npm run build && npx vercel ./dist"
   },
+  "resolutions": {
+  "csstype": "3.0.10"
+}
   "dependencies": {
     "autoprefixer": "^10.4.4",
     "hamburger-react": "^2.5.0",
@@ -20,6 +23,7 @@
     "react-router-dom": "^6.3.0",
     "moment": "^2.29.1",
     "react-calendar": "^3.6.0"
+    
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
