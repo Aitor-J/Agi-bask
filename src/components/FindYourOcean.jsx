@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import dataBeach from "../data/databeach";
+import Calendar from "react-calendar";
+import dataBeach from "../data/dataBeach";
 import BeachCardList from "./BeachCardsList";
+import NavBar from "./NavBar";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
@@ -12,17 +14,17 @@ const FindYourOcean = () => {
   );
 
   return (
-    <div className='findYourOcean'>
-      <div className='findYourOcean__bg' />
-      <h1 className='findYourOcean__title'>
-        AGI' BASK
-        <h2 className='findYourOcean__title__subtitle'>
-          Trouve ta communauté pour nettoyer la plage.
-        </h2>
-      </h1>
-      <div className='findYourOcean__selector'>
-        <div className='findYourOcean__selector__city'>
-          <label className='findYourOcean__selector__city__title'>
+    <div className="findYourOcean">
+      <div className="findYourOcean__bg" />
+      <NavBar />
+      <h1 className="findYourOcean__title">AGI' BASK</h1>
+      <h2 className="findYourOcean__subtitle">
+        Trouve ta communauté pour nettoyer la plage.
+      </h2>
+
+      <div className="findYourOcean__selector">
+        <div className="findYourOcean__selector__city">
+          <label className="findYourOcean__selector__city__title">
             ↡ Filtrer par ville ↡
           </label>
 
@@ -35,7 +37,8 @@ const FindYourOcean = () => {
               }
               key={index}
               value={city}
-              onClick={(e) => setLocations(e.target.value)}>
+              onClick={(e) => setLocations(e.target.value)}
+            >
               {city}
             </button>
           ))}

@@ -106,7 +106,7 @@ const dataforest = [
       users: [],
     },
     desc: "Venez les découvrir au cours de visites pédestres guidées ou pas et observez en même temps la faune, la flore, les rapaces, et connaître l'histoire fabuleuse du lapin d'il y a 400 000 ans à nos jours...",
-    img: "../public/assets/beach-img/lapin.jpg",
+    img: "../public/assets/forest-img/lapin.jpg",
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ const dataforest = [
       users: [],
     },
     desc: "Située aux portes de Bayonne et le long de la Nive, la Plaine d’Ansot est un espace naturel sensible de 100 hectares offrant un ilot de verdure en zone périurbaine. Intégré au réseau Natura 2000, ce site réglementé est une zone de barthes, constituée d'une mosaïque de milieux naturels (bois, prairies, roselières, cours d'eau…) abritant une flore et une faune particulières.",
-    img: "../public/assets/beach-img/ansot.jpg",
+    img: "../public/assets/forest-img/ansot.jpg",
   },
 ];
 
