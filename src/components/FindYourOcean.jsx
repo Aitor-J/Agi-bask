@@ -4,7 +4,6 @@ import BeachCardList from "./BeachCardList";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
-  console.log(typeof locations);
 
   const cityNames = [];
   dataBeach.map((beach) => !cityNames.includes(beach.location) && cityNames.push(beach.location));
@@ -19,7 +18,7 @@ const FindYourOcean = () => {
 
           {cityNames.map((city, index) => (
             <button
-              className='findYourOcean__selector__city__button'
+              className={city === locations ? "findYourOcean__selector__city__buttonOn" : "findYourOcean__selector__city__button"}
               key={index}
               value={city}
               onClick={(e) => setLocations(e.target.value)}>

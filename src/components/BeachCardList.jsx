@@ -13,19 +13,23 @@ const BeachCardList = ({ beach }) => {
       </p>
       <p className='beachCard__missions'>Prochaines missions</p>
       <ul className='beachCard__lu_dates'>
-        {beach.events.dates[0] === "jj-mm-aaaa" ? (
-          <p className='beachCard__noDates'>Pas de dates disponibles...</p>
-        ) : (
-          beach.events.dates.map((date, index) => (
-            <li className='beachCard__dates' key={index}>
-              {date}
-            </li>
-          ))
-        )}
+        {beach.events.dates[0] === "jj-mm-aaaa"
+          ? ""
+          : beach.events.dates.map((date, index) => (
+              <li className='beachCard__dates' key={index}>
+                {date}
+              </li>
+            ))}
       </ul>
-      <button className='beachCard__button' type='button'>
-        PARTICIPER
-      </button>
+      {beach.events.dates[0] === "jj-mm-aaaa" ? (
+        <button className='beachCard__buttonOn' type='button'>
+          CREER
+        </button>
+      ) : (
+        <button className='beachCard__button' type='button'>
+          PARTICIPER
+        </button>
+      )}
     </div>
   );
 };
