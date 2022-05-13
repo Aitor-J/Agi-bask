@@ -6,14 +6,16 @@ import LandingPage from "./components/LandingPage";
 import HomePage from "./components/HomePage";
 import Form from "./components/Form";
 import FindYourForest from "./components/FindYourForest";
+import BeachCard from "./components/BeachCard";
+import databeach from "./data/databeach";
 
 function App() {
   return (
     <div className="app">
       <HashRouter>
-        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/Beach" element={<BeachCard beach={databeach[0]} />} />
           <Route path="/Home" element={<HomePage />} />
           <Route path="/Ocean" element={<FindYourOcean />} />
           <Route path="/Forest" element={<FindYourForest />} />
