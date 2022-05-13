@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import Calendar from "react-calendar";
 import dataBeach from "../data/dataBeach";
-=======
-import dataBeach from "../data/databeach";
->>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
 import BeachCardList from "./BeachCardsList";
 import NavBar from "./NavBar";
 
 const FindYourOcean = () => {
   const [locations, setLocations] = useState([]);
-  let [firstDate, setFirstDate] = useState([]);
-  let [lastDate, setLastDate] = useState([]);
-  console.log(firstDate);
 
   let cityNames = [];
   dataBeach.map(
@@ -23,10 +16,7 @@ const FindYourOcean = () => {
   return (
     <div className="findYourOcean">
       <div className="findYourOcean__bg" />
-<<<<<<< HEAD
       <NavBar />
-=======
->>>>>>> 4a9956017a46b5906905bc4c70481203897a0df0
       <h1 className="findYourOcean__title">
         Find the perfect way to clean your ocean
       </h1>
@@ -50,9 +40,6 @@ const FindYourOcean = () => {
               {city}
             </button>
           ))}
-        </div>
-        <div className="findYourOcean__selector__date">
-          <Calendar sessions={firstDate} setSessions={setFirstDate} />
         </div>
       </div>
       {locations.length !== 0

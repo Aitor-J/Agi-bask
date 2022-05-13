@@ -15,6 +15,7 @@ const FindYourForest = () => {
   return (
     <div className="findYourForest">
       <div className="findYourForest__bg" />
+      <NavBar />
       <h1 className="findYourForest__title">
         Find the perfect way to clean your Forest
       </h1>
